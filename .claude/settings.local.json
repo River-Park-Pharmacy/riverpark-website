@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app:*)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --yes)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss init -p)",
+      "Bash(node:*)",
+      "Bash(npm run build:*)",
+      "Bash(if not exist \"c:\\\\PersonalProjects\\\\riverparkrx-website\\\\public\\\\images\" mkdir \"c:\\\\PersonalProjects\\\\riverparkrx-website\\\\public\\\\images\")"
+    ]
+  }
+}

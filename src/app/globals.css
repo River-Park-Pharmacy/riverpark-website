@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pharmacy-red: #E5392D;
+  --color-pharmacy-red-dark: #C42F24;
+  --color-medical-blue: #1E88C8;
+  --color-medical-blue-dark: #1A75AD;
+  --color-warm-orange: #F28C28;
+  --color-warm-orange-dark: #D97B20;
+
+  --font-family-montserrat: var(--font-montserrat), sans-serif;
+  --font-family-open-sans: var(--font-open-sans), sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-family-open-sans);
+    @apply text-gray-800 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-montserrat);
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .font-montserrat {
+    font-family: var(--font-family-montserrat);
+  }
+
+  .font-open-sans {
+    font-family: var(--font-family-open-sans);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-pharmacy-red text-white font-semibold rounded-lg transition-all duration-200 ease-in-out hover:bg-pharmacy-red-dark hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-pharmacy-red focus:ring-offset-2;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-white text-medical-blue border-2 border-medical-blue font-semibold rounded-lg transition-all duration-200 ease-in-out hover:bg-medical-blue hover:text-white focus:outline-none focus:ring-2 focus:ring-medical-blue focus:ring-offset-2;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-transparent text-pharmacy-red border-2 border-pharmacy-red font-semibold rounded-lg transition-all duration-200 ease-in-out hover:bg-pharmacy-red hover:text-white focus:outline-none focus:ring-2 focus:ring-pharmacy-red focus:ring-offset-2;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .heading-1 {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+
+  .heading-2 {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold leading-tight;
+  }
+
+  .heading-3 {
+    @apply text-xl sm:text-2xl md:text-3xl font-semibold leading-tight;
+  }
+
+  .body-text {
+    @apply text-base md:text-lg leading-relaxed text-gray-600;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md p-6 transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .link {
+    @apply text-medical-blue hover:text-medical-blue-dark transition-colors duration-200 underline-offset-2 hover:underline;
+  }
+}
+
+@layer utilities {
+  .animate-on-scroll {
+    @apply opacity-0 translate-y-5 transition-all duration-500 ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
