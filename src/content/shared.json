@@ -121,6 +121,10 @@
         {
           "label": "Terms of Service",
           "href": "/terms"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "/cookies"
         }
       ]
     }
