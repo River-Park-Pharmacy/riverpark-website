@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import SmoothScroll from '@/components/ui/SmoothScroll'
+import CookieConsent from '@/components/ui/CookieConsent'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -66,6 +67,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   )
