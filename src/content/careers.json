@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "title": "Join the River Park Pharmacy Team",
+    "titleHighlight": "River Park Pharmacy",
+    "subtitle": "Be part of a community-focused team dedicated to improving the health and wellbeing of our Bronx neighborhood. We're looking for passionate individuals who share our commitment to exceptional patient care."
+  },
+  "whyJoinUs": {
+    "title": "Why Work With Us",
+    "subtitle": "At River Park Pharmacy, we believe our team is our greatest strength. We offer a supportive work environment where you can grow professionally while making a real difference in people's lives.",
+    "reasons": [
+      {
+        "title": "Community Impact",
+        "description": "Work directly with patients in our neighborhood, building meaningful relationships and making a tangible difference in their health outcomes."
+      },
+      {
+        "title": "Professional Growth",
+        "description": "We invest in our team's development through continuing education, training opportunities, and hands-on experience across all pharmacy operations."
+      },
+      {
+        "title": "Supportive Team Culture",
+        "description": "Join a close-knit team that values collaboration, open communication, and mutual respect. We succeed together."
+      },
+      {
+        "title": "Work-Life Balance",
+        "description": "We understand the importance of balance with consistent Monday through Friday schedules and a respectful approach to your time."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Benefits & Perks",
+    "subtitle": "We take care of our team so they can take care of our community.",
+    "list": [
+      "Health Insurance",
+      "Paid Time Off (PTO)",
+      "Consistent Monday – Friday schedule",
+      "40-hour work week",
+      "Professional development opportunities",
+      "Collaborative work environment",
+      "Opportunity to serve a diverse community"
+    ]
+  },
+  "openPositions": {
+    "title": "Open Position",
+    "subtitle": "We are currently hiring for the following role.",
+    "positions": [
+      {
+        "title": "Sr. Database Administrator",
+        "type": "Full-Time",
+        "schedule": "Monday – Friday, 40 hrs/week",
+        "description": "We're seeking an experienced Sr. Database Administrator to ensure the integrity, security, and HIPAA-compliant protection of our enterprise and patient data. You will design, maintain, and optimize pharmacy databases and integrations across our technology platforms.",
+        "duties": [
+          "Ensure the integrity, security, and HIPAA-compliant protection of enterprise and patient data through access controls, encryption, backups, and continuous monitoring across servers, databases, and data transfers",
+          "Design, maintain, and optimize pharmacy databases and integrations with EHR, POS, inventory, billing, Micro Merchant, Medistics, 340B (Cumulus), and DME platforms",
+          "Troubleshoot performance, connectivity, and data issues across all integrated systems",
+          "Create and maintain the database schema, including tables, indexes, views, and relationships to efficiently store pharmacy data such as patient information, prescriptions, inventory, and billing",
+          "Ensure seamless data integration with Electronic Health Records (EHR), Point of Sale (POS) systems, and inventory management systems"
+        ],
+        "requirements": [
+          "Master's degree or foreign equivalent in Business Analytics, Computer Information Systems, Computer Science, or Computer Engineering",
+          "One (1) year of experience as Sr. Database Administrator or Database Administrator performing the listed job duties"
+        ]
+      }
+    ]
+  },
+  "ctaSection": {
+    "title": "Ready to Make a Difference?",
+    "subtitle": "Send us your resume and a brief note about yourself. We'd love to hear from you!"
+  }
+}

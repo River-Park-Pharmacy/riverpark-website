@@ -70,6 +70,10 @@
         "href": "/about"
       },
       {
+        "label": "Careers",
+        "href": "/careers"
+      },
+      {
         "label": "Contact",
         "href": "/contact"
       }
@@ -91,6 +95,10 @@
         {
           "label": "Prescriptions",
           "href": "/prescriptions"
+        },
+        {
+          "label": "Careers",
+          "href": "/careers"
         },
         {
           "label": "Contact",
