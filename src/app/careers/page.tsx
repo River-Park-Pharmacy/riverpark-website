@@ -10,6 +10,7 @@ import {
   Briefcase,
   MapPin,
   Calendar,
+  CalendarClock,
   Send,
   Phone,
   Mail,
@@ -130,7 +131,7 @@ export default function CareersPage() {
                   </span>
                 </div>
 
-                <div className="flex flex-wrap gap-4 text-gray-500 text-sm mb-6">
+                <div className="flex flex-wrap gap-x-4 gap-y-2 text-gray-500 text-sm mb-6">
                   <div className="flex items-center">
                     <MapPin className="w-4 h-4 mr-1.5" />
                     Bronx, NY
@@ -138,6 +139,14 @@ export default function CareersPage() {
                   <div className="flex items-center">
                     <Calendar className="w-4 h-4 mr-1.5" />
                     {position.schedule}
+                  </div>
+                  <div className="flex items-center">
+                    <CalendarClock className="w-4 h-4 mr-1.5" />
+                    Posted: {position.datePosted}
+                  </div>
+                  <div className="flex items-center text-pharmacy-red font-medium">
+                    <CalendarClock className="w-4 h-4 mr-1.5" />
+                    Deadline: {position.deadline}
                   </div>
                 </div>
 
