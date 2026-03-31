@@ -2,7 +2,7 @@
   "hero": {
     "title": "Join the River Park Pharmacy Team",
     "titleHighlight": "River Park Pharmacy",
-    "subtitle": "Be part of a community-focused team dedicated to improving the health and wellbeing of our Bronx neighborhood. We're looking for passionate individuals who share our commitment to exceptional patient care."
+    "subtitle": "Join our team and help power the technology behind modern pharmacy care. We're looking for skilled professionals to manage and optimize the systems that keep our operations running smoothly."
   },
   "whyJoinUs": {
     "title": "Why Work With Us",
@@ -47,6 +47,8 @@
         "title": "Sr. Database Administrator",
         "type": "Full-Time",
         "schedule": "Monday – Friday, 40 hrs/week",
+        "datePosted": "March 31, 2026",
+        "deadline": "April 25, 2026",
         "description": "We're seeking an experienced Sr. Database Administrator to ensure the integrity, security, and HIPAA-compliant protection of our enterprise and patient data. You will design, maintain, and optimize pharmacy databases and integrations across our technology platforms.",
         "duties": [
           "Ensure the integrity, security, and HIPAA-compliant protection of enterprise and patient data through access controls, encryption, backups, and continuous monitoring across servers, databases, and data transfers",
