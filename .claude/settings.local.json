@@ -14,7 +14,12 @@
       "Bash(del \"c:\\\\PersonalProjects\\\\riverparkrx-website\\\\src\\\\content\\\\siteContent.json\")",
       "Bash(ls -la \"c:\\\\PersonalProjects\\\\riverpark-website\\\\src\\\\app\"\" | grep -E \"page)",
       "Bash(layout \")",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(npx next:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3123/careers)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/careers)",
+      "WebFetch(domain:localhost)",
+      "Bash(curl -s http://localhost:3000/careers)"
     ]
   }
 }

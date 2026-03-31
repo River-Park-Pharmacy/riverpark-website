@@ -5,6 +5,7 @@ import servicesContent from './services.json'
 import aboutContent from './about.json'
 import prescriptionsContent from './prescriptions.json'
 import contactContent from './contact.json'
+import careersContent from './careers.json'
 
 // Type definitions
 export interface NavLink {
@@ -81,6 +82,7 @@ export const services = servicesContent
 export const about = aboutContent
 export const prescriptions = prescriptionsContent
 export const contactPage = contactContent
+export const careers = careersContent
 
 // Export full content object for convenience
 export const content = {
@@ -90,6 +92,7 @@ export const content = {
   about: aboutContent,
   prescriptions: prescriptionsContent,
   contactPage: contactContent,
+  careers: careersContent,
 }
 
 // Helper functions
