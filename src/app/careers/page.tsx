@@ -7,8 +7,10 @@ import {
   Users,
   Clock,
   CheckCircle,
-  Briefcase,
   MapPin,
+  DollarSign,
+  Building2,
+  User,
   Calendar,
   CalendarClock,
   Send,
@@ -81,39 +83,8 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-12 md:py-16 bg-gray-50">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <AnimatedSection>
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-medical-blue rounded-2xl mb-6">
-                <Briefcase className="w-8 h-8 text-white" />
-              </div>
-              <h2 className="heading-2 text-gray-900 mb-4">
-                {careers.benefits.title}
-              </h2>
-              <p className="body-text mb-6">
-                {careers.benefits.subtitle}
-              </p>
-            </AnimatedSection>
-            <AnimatedSection delay={0.2}>
-              <div className="bg-white rounded-2xl p-6 md:p-12 shadow-lg">
-                <ul className="space-y-4">
-                  {careers.benefits.list.map((benefit, index) => (
-                    <li key={index} className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-600">{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
       {/* Open Position Section */}
-      <section id="open-position" className="py-12 md:py-16 bg-white">
+      <section id="open-position" className="py-12 md:py-16 bg-gray-50">
         <div className="container-custom">
           <SectionHeading
             title={careers.openPositions.title}
@@ -150,6 +121,12 @@ export default function CareersPage() {
                   </div>
                 </div>
 
+                <div className="flex items-center mb-6">
+                  <DollarSign className="w-5 h-5 text-green-600 mr-1.5" />
+                  <span className="font-montserrat font-semibold text-gray-900">Salary:</span>
+                  <span className="ml-2 text-gray-700">$101,234.00 Per Year</span>
+                </div>
+
                 <p className="body-text mb-6">{position.description}</p>
 
                 {/* Job Duties */}
@@ -162,6 +139,21 @@ export default function CareersPage() {
                       <li key={dutyIndex} className="flex items-start text-sm text-gray-600">
                         <CheckCircle className="w-4 h-4 text-pharmacy-red mr-2.5 mt-0.5 flex-shrink-0" />
                         <span>{duty}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Benefits */}
+                <div className="mb-6">
+                  <h4 className="font-montserrat font-semibold text-gray-900 mb-3">
+                    Benefits:
+                  </h4>
+                  <ul className="space-y-3">
+                    {careers.benefits.list.map((benefit, i) => (
+                      <li key={i} className="flex items-start text-sm text-gray-600">
+                        <CheckCircle className="w-4 h-4 text-green-500 mr-2.5 mt-0.5 flex-shrink-0" />
+                        <span>{benefit}</span>
                       </li>
                     ))}
                   </ul>
@@ -182,9 +174,42 @@ export default function CareersPage() {
                   </ul>
                 </div>
 
+                {/* Contact */}
+                <div className="mb-8">
+                  <h4 className="font-montserrat font-semibold text-gray-900 mb-3">
+                    Contact:
+                  </h4>
+                  <div className="bg-gray-50 rounded-xl p-4 md:p-6 space-y-2 text-sm text-gray-600">
+                    <div className="flex items-start">
+                      <User className="w-4 h-4 text-medical-blue mr-2.5 mt-0.5 flex-shrink-0" />
+                      <span><strong className="text-gray-900">Bala S. Karnam Sreenivas</strong>, Vice President</span>
+                    </div>
+                    <div className="flex items-start">
+                      <Building2 className="w-4 h-4 text-medical-blue mr-2.5 mt-0.5 flex-shrink-0" />
+                      <span>River Park Pharmacy, d/b/a River Park RX LLC</span>
+                    </div>
+                    <div className="flex items-start">
+                      <MapPin className="w-4 h-4 text-medical-blue mr-2.5 mt-0.5 flex-shrink-0" />
+                      <span>1804 Cedar Avenue, Bronx, NY 10453</span>
+                    </div>
+                    <div className="flex items-center">
+                      <Phone className="w-4 h-4 text-medical-blue mr-2.5 flex-shrink-0" />
+                      <a href="tel:+13477266969" className="text-medical-blue hover:underline">(347) 726-6969</a>
+                    </div>
+                    <div className="flex items-center">
+                      <Mail className="w-4 h-4 text-medical-blue mr-2.5 flex-shrink-0" />
+                      <a href="mailto:info@riverparkrx.com" className="text-medical-blue hover:underline">info@riverparkrx.com</a>
+                    </div>
+                    <div className="flex items-center">
+                      <Mail className="w-4 h-4 text-medical-blue mr-2.5 flex-shrink-0" />
+                      <a href="mailto:riverparkrx@gmail.com" className="text-medical-blue hover:underline">riverparkrx@gmail.com</a>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="pt-6 border-t border-gray-100">
                   <a
-                    href={`mailto:${contactInfo.email}?subject=Application - ${position.title}`}
+                    href="mailto:riverparkrx@gmail.com?subject=Application - Sr. Database Administrator"
                     className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3 bg-pharmacy-red text-white font-montserrat font-semibold rounded-lg hover:bg-pharmacy-red-dark transition-colors"
                   >
                     <Send className="w-5 h-5 mr-2" />
@@ -209,7 +234,7 @@ export default function CareersPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href={`mailto:${contactInfo.email}?subject=Career Inquiry - River Park Pharmacy`}
+                href="mailto:riverparkrx@gmail.com?subject=Career Inquiry - River Park Pharmacy"
                 className="inline-flex items-center justify-center px-6 md:px-8 py-4 bg-white text-pharmacy-red font-montserrat font-semibold rounded-lg hover:bg-gray-100 transition-colors"
               >
                 <Send className="w-5 h-5 mr-2" />
@@ -226,8 +251,8 @@ export default function CareersPage() {
             <p className="text-white/70 text-sm mt-6">
               <Mail className="w-4 h-4 inline mr-1" />
               Send your resume to{' '}
-              <a href={`mailto:${contactInfo.email}`} className="text-white underline hover:no-underline">
-                {contactInfo.email}
+              <a href="mailto:riverparkrx@gmail.com" className="text-white underline hover:no-underline">
+                riverparkrx@gmail.com
               </a>
             </p>
           </AnimatedSection>
