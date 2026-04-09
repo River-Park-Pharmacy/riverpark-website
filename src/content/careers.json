@@ -49,18 +49,12 @@
         "schedule": "Monday – Friday, 40 hrs/week",
         "datePosted": "April 9, 2026",
         "deadline": "May 7, 2026",
-        "description": "We're seeking an experienced Sr. Database Administrator to ensure the integrity, security, and HIPAA-compliant protection of our enterprise and patient data. You will design, maintain, and optimize pharmacy databases and integrations across our technology platforms.",
-        "duties": [
-          "Ensure the integrity, security, and HIPAA-compliant protection of enterprise and patient data through access controls, encryption, backups, and continuous monitoring across servers, databases, and data transfers",
-          "Design, maintain, and optimize pharmacy databases and integrations with EHR, POS, inventory, billing, Micro Merchant, Medistics, 340B (Cumulus), and DME platforms",
-          "Troubleshoot performance, connectivity, and data issues across all integrated systems",
-          "Create and maintain the database schema, including tables, indexes, views, and relationships to efficiently store pharmacy data such as patient information, prescriptions, inventory, and billing",
-          "Ensure seamless data integration with Electronic Health Records (EHR), Point of Sale (POS) systems, and inventory management systems"
-        ],
-        "requirements": [
-          "Master's degree or foreign equivalent in Business Analytics, Computer Information Systems, Computer Science, or Computer Engineering",
-          "One (1) year of experience as Sr. Database Administrator or Database Administrator performing the listed job duties"
-        ]
+        "postingWindow": "04/09/2026 – 05/07/2026",
+        "requirementSummary": "Sr. Database Administrator needed w/Master's degree or Foreign Equivalent in Business Analytics or Computer Information Systems or Computer Science or Computer Engineering and one (1) year experience as Sr. Database Administrator or Database Administrator performing following job duties:",
+        "dutiesParagraph": "Ensure the integrity, security, HIPAA-compliant protection of enterprise and patient data through access controls, encryption, backups, continuous monitoring across servers, databases and data transfers.  Design, maintain and optimize pharmacy databases and integrations with EHR, POS, inventory, billing, Micro Merchant, Medistics, 340B (Cumulus) and DME platforms, while troubleshooting performance, connectivity and data issues.   Create and maintain the database schema, including tables, indexes, views and relationships to efficiently store pharmacy data such as patient information, prescriptions, inventory and billing.  Ensure seamless data integration with Electronic Health Records (EHR), Point of Sale (POS) systems and inventory management systems.",
+        "benefitsText": "Health Insurance & PTO",
+        "salary": "$101234.00 Per Year",
+        "jobLocation": "Bronx, NY"
       }
     ]
   },

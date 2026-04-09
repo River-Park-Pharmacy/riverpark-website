@@ -6,12 +6,8 @@ import {
   TrendingUp,
   Users,
   Clock,
-  CheckCircle,
   MapPin,
-  DollarSign,
   Building2,
-  Calendar,
-  CalendarClock,
   Send,
   Phone,
   Mail,
@@ -92,85 +88,50 @@ export default function CareersPage() {
           {careers.openPositions.positions.map((position, index) => (
             <AnimatedSection key={position.title} delay={index * 0.1}>
               <div className="max-w-4xl mx-auto bg-white rounded-2xl p-6 md:p-10 shadow-lg border border-gray-100">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                  <h3 className="font-montserrat font-bold text-xl md:text-2xl text-gray-900">
-                    {position.title}
+                {/* Notice Header */}
+                <div className="text-center mb-8">
+                  <h3 className="font-montserrat font-bold text-xl md:text-2xl text-gray-900 mb-6">
+                    Job Opening for {position.title}
                   </h3>
-                  <span className="inline-flex items-center mt-2 sm:mt-0 px-4 py-1.5 bg-pharmacy-red/10 text-pharmacy-red text-sm font-semibold rounded-full">
-                    {position.type}
-                  </span>
+                  <p className="text-gray-700 mb-1">
+                    The following website advertisement will be posted from
+                  </p>
+                  <p className="font-montserrat font-semibold text-medical-blue text-lg">
+                    {position.postingWindow}
+                  </p>
                 </div>
 
-                <div className="flex flex-wrap gap-x-4 gap-y-2 text-gray-500 text-sm mb-6">
-                  <div className="flex items-center">
-                    <MapPin className="w-4 h-4 mr-1.5" />
-                    Bronx, NY
-                  </div>
-                  <div className="flex items-center">
-                    <Calendar className="w-4 h-4 mr-1.5" />
-                    {position.schedule}
-                  </div>
-                  <div className="flex items-center">
-                    <CalendarClock className="w-4 h-4 mr-1.5" />
-                    Posted: {position.datePosted}
-                  </div>
-                  <div className="flex items-center text-pharmacy-red font-medium">
-                    <CalendarClock className="w-4 h-4 mr-1.5" />
-                    Deadline: {position.deadline}
-                  </div>
-                </div>
-
-                <div className="flex items-center mb-6">
-                  <DollarSign className="w-5 h-5 text-green-600 mr-1.5" />
-                  <span className="font-montserrat font-semibold text-gray-900">Salary:</span>
-                  <span className="ml-2 text-gray-700">$101,234.00 Per Year</span>
-                </div>
-
-                <p className="body-text mb-6">{position.description}</p>
-
-                {/* Job Duties */}
-                <div className="mb-6">
-                  <h4 className="font-montserrat font-semibold text-gray-900 mb-3">
-                    Job Duties:
-                  </h4>
-                  <ul className="space-y-3">
-                    {position.duties.map((duty, dutyIndex) => (
-                      <li key={dutyIndex} className="flex items-start text-sm text-gray-600">
-                        <CheckCircle className="w-4 h-4 text-pharmacy-red mr-2.5 mt-0.5 flex-shrink-0" />
-                        <span>{duty}</span>
-                      </li>
-                    ))}
-                  </ul>
+                <div className="border-t border-gray-200 pt-6 mb-6">
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    {position.requirementSummary}
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    {position.dutiesParagraph}
+                  </p>
                 </div>
 
                 {/* Benefits */}
-                <div className="mb-6">
-                  <h4 className="font-montserrat font-semibold text-gray-900 mb-3">
+                <div className="mb-4">
+                  <h4 className="font-montserrat font-semibold text-gray-900 mb-1">
                     Benefits:
                   </h4>
-                  <ul className="space-y-3">
-                    {careers.benefits.list.map((benefit, i) => (
-                      <li key={i} className="flex items-start text-sm text-gray-600">
-                        <CheckCircle className="w-4 h-4 text-green-500 mr-2.5 mt-0.5 flex-shrink-0" />
-                        <span>{benefit}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-gray-700">{position.benefitsText}</p>
                 </div>
 
-                {/* Requirements */}
+                {/* Salary */}
+                <div className="mb-4">
+                  <p className="text-gray-700">
+                    <span className="font-montserrat font-semibold text-gray-900">Salary:</span>{' '}
+                    {position.salary}.
+                  </p>
+                </div>
+
+                {/* Job Location */}
                 <div className="mb-8">
-                  <h4 className="font-montserrat font-semibold text-gray-900 mb-3">
-                    Education & Experience Requirements:
+                  <h4 className="font-montserrat font-semibold text-gray-900 mb-1">
+                    Job Location:
                   </h4>
-                  <ul className="space-y-3">
-                    {position.requirements.map((req, reqIndex) => (
-                      <li key={reqIndex} className="flex items-start text-sm text-gray-600">
-                        <CheckCircle className="w-4 h-4 text-medical-blue mr-2.5 mt-0.5 flex-shrink-0" />
-                        <span>{req}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-gray-700">{position.jobLocation}</p>
                 </div>
 
                 {/* Contact */}
