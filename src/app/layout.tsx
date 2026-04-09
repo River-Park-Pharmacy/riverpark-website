@@ -61,7 +61,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${openSans.variable}`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${montserrat.variable} ${openSans.variable}`}>
       <body className="min-h-screen flex flex-col">
         <SmoothScroll />
         <Header />

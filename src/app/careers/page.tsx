@@ -94,7 +94,7 @@ export default function CareersPage() {
                     Job Opening for {position.title}
                   </h3>
                   <p className="text-gray-700 mb-1">
-                    The following website advertisement will be posted from
+                    The following advertisement will be posted from
                   </p>
                   <p className="font-montserrat font-semibold text-medical-blue text-lg">
                     {position.postingWindow}
