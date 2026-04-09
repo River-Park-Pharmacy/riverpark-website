@@ -6,8 +6,6 @@ import {
   TrendingUp,
   Users,
   Clock,
-  MapPin,
-  Building2,
   Send,
   Phone,
   Mail,
@@ -134,33 +132,13 @@ export default function CareersPage() {
                   <p className="text-gray-700">{position.jobLocation}</p>
                 </div>
 
-                {/* Contact */}
+                {/* Mail Resumes To */}
                 <div className="mb-8">
-                  <h4 className="font-montserrat font-semibold text-gray-900 mb-3">
-                    Contact:
+                  <h4 className="font-montserrat font-semibold text-gray-900 mb-1">
+                    Mail Resumes to:
                   </h4>
-                  <div className="bg-gray-50 rounded-xl p-4 md:p-6 space-y-2 text-sm text-gray-600">
-                    <div className="flex items-start">
-                      <Building2 className="w-4 h-4 text-medical-blue mr-2.5 mt-0.5 flex-shrink-0" />
-                      <span>River Park Pharmacy, d/b/a River Park RX LLC</span>
-                    </div>
-                    <div className="flex items-start">
-                      <MapPin className="w-4 h-4 text-medical-blue mr-2.5 mt-0.5 flex-shrink-0" />
-                      <span>1804 Cedar Avenue, Bronx, NY 10453</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Phone className="w-4 h-4 text-medical-blue mr-2.5 flex-shrink-0" />
-                      <a href="tel:+13477266969" className="text-medical-blue hover:underline">(347) 726-6969</a>
-                    </div>
-                    <div className="flex items-center">
-                      <Mail className="w-4 h-4 text-medical-blue mr-2.5 flex-shrink-0" />
-                      <a href="mailto:info@riverparkrx.com" className="text-medical-blue hover:underline">info@riverparkrx.com</a>
-                    </div>
-                    <div className="flex items-center">
-                      <Mail className="w-4 h-4 text-medical-blue mr-2.5 flex-shrink-0" />
-                      <a href="mailto:riverparkrx@gmail.com" className="text-medical-blue hover:underline">riverparkrx@gmail.com</a>
-                    </div>
-                  </div>
+                  <p className="text-gray-700">River Park Pharmacy, d/b/a River Park RX LLC</p>
+                  <p className="text-gray-700">1804 Cedar Avenue, Bronx, NY 10453</p>
                 </div>
 
                 <div className="pt-6 border-t border-gray-100">
