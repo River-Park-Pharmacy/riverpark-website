@@ -10,7 +10,6 @@ import {
   MapPin,
   DollarSign,
   Building2,
-  User,
   Calendar,
   CalendarClock,
   Send,
@@ -180,10 +179,6 @@ export default function CareersPage() {
                     Contact:
                   </h4>
                   <div className="bg-gray-50 rounded-xl p-4 md:p-6 space-y-2 text-sm text-gray-600">
-                    <div className="flex items-start">
-                      <User className="w-4 h-4 text-medical-blue mr-2.5 mt-0.5 flex-shrink-0" />
-                      <span><strong className="text-gray-900">Bala S. Karnam Sreenivas</strong>, Vice President</span>
-                    </div>
                     <div className="flex items-start">
                       <Building2 className="w-4 h-4 text-medical-blue mr-2.5 mt-0.5 flex-shrink-0" />
                       <span>River Park Pharmacy, d/b/a River Park RX LLC</span>
